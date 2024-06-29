@@ -1,0 +1,96 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: Azure Serverless Hub
+theme: hextra
+
+enableRobotsTXT: true
+enableGitInfo: true
+enableEmoji: true
+hasCJKLanguage: true
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+enableInlineShortcodes: true
+menu:
+  main:
+    - identifier: eda
+      name: EDA
+      pageRef: /eda
+      weight: 1   
+    - identifier: patterns
+      name: Patterns
+      pageRef: /patterns
+      weight: 2
+    - identifier: applications
+      name: Sample Applications
+      pageRef: /applications
+      weight: 3
+    - identifier: snippets
+      name: Snippets
+      pageRef: /snippets
+      weight: 4
+    - identifier: resources
+      name: Resources
+      pageRef: /resources
+      weight: 5
+    - name: Search
+      weight: 6
+      params:
+        type: search
+    - name: GitHub
+      weight: 7
+      url: "https://github.com/azureserverlesshub/azureserverlesshub.github.io"
+      params:
+        icon: github 
+
+  sidebar:
+    - identifier: more
+      name: References
+      params:
+        type: separator
+      weight: 1
+    - identifier: learn
+      name: "Microsoft Learn ↗"
+      url: "https://learn.microsoft.com/en-us/"
+      weight: 3
+    - identifier: awaf
+      name: "Azure Well-Architected Framework ↗"
+      url: "https://learn.microsoft.com/en-us/azure/well-architected/"
+      weight: 2
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo.svg
+      link: /
+      width: 40
+      height: 20
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: false
+    width: wide 
+    
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: wide
+  editURL:
+    enable: true
+    base: "https://github.com/azureserverlesshub/azureserverlesshub.github.io/edit/main/"
+  
