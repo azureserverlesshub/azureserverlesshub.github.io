@@ -6,7 +6,7 @@ layout: hextra-home
   image="/images/landing/landing.svg"
   imageClass="hx-block hx-overflow-hidden hx-rounded-3xl"
   imageWidth="900" imageHeight="500"
-  imageTitle="AXIVO">}}
+  imageTitle="landing-diagram">}}
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
   Building Event Driven Architectures

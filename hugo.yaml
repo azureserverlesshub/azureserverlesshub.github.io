@@ -92,5 +92,5 @@ params:
     width: wide
   editURL:
     enable: true
-    base: "https://github.com/azureserverlesshub/azureserverlesshub.github.io/edit/main/"
+    base: "https://github.com/azureserverlesshub/azureserverlesshub.github.io/edit/main/content/"
   
