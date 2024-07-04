@@ -1,0 +1,44 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure Serverless Hub – Eda-Visuals</title>
+    <link>http://localhost:1313/tags/eda-visuals/</link>
+    <description>Recent content in Eda-Visuals on Azure Serverless Hub</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	  <atom:link href="http://localhost:1313/tags/eda-visuals/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Producer and consumer responsibilities</title>
+      <link>http://localhost:1313/eda/visuals/producer-consumer-responsibilities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/eda/visuals/producer-consumer-responsibilities/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When building event-driven applications it’s important to know the responsibility of the consumer and producer.&lt;/p&gt;
+
+
+
+
+
+&lt;figure&gt;
+    &lt;img src=&#34;http://localhost:1313/images/visuals/producer-consumer-responsibilities/producer-consumer-responsibilities.svg&#34; alt=&#34;Producer and Consumer Responsibilities&#34; class=&#34;img-fluid&#34; data-action=&#34;zoom&#34; /&gt;
+    &lt;figcaption&gt;
+        Producer and Consumer Responsibilities
+    &lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+&lt;p&gt;Use this diagram as a base, but you may want to adapt it based on your architecture.&lt;/p&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Azure Serverless Hub – Introduction</title>
+    <title>Azure Serverless Hub – Introduction to Event Driven Architecture</title>
     <link>http://localhost:1313/eda/</link>
-    <description>Recent content in Introduction on Azure Serverless Hub</description>
+    <description>Recent content in Introduction to Event Driven Architecture on Azure Serverless Hub</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     

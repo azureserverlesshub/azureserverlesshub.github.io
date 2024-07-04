@@ -1,0 +1,68 @@
+{{- $title := .Get "title" -}}
+{{- $subtitle := .Get "subtitle" -}}
+{{- $class := .Get "class" -}}
+{{- $image := .Get "image" -}}
+{{- $imageClass := .Get "imageClass" -}}
+{{- $style := .Get "style" -}}
+{{- $icon := .Get "icon" -}}
+
+{{- $firstBtnLink := .Get "firstBtnLink" -}}
+{{- $firstBtnText := .Get "firstBtnText" -}}
+{{- $firstBtnStyle := .Get "firstBtnStyle" -}}
+
+{{- $secondBtnLink := .Get "secondBtnLink" -}}
+{{- $secondBtnText := .Get "secondBtnText" -}}
+{{- $secondBtnStyle := .Get "secondBtnStyle" -}}
+
+{{- $firstBtnexternalLink := hasPrefix $firstBtnLink "http" -}}
+{{- $firstBtnhref := cond (hasPrefix $firstBtnLink "/") ($firstBtnLink | relURL) $firstBtnLink -}}
+
+{{- $secondBtnexternalLink := hasPrefix $secondBtnLink "http" -}}
+{{- $secondBtnhref := cond (hasPrefix $secondBtnLink "/") ($secondBtnLink | relURL) $secondBtnLink -}}
+
+
+{{- if hasPrefix $image "/" -}}
+{{- $image = relURL (strings.TrimPrefix "/" $image) -}}
+{{- end -}}
+
+<div {{ with $style }}style="{{ . | safeCSS }}" {{ end }}
+    class="{{ $class }} hextra-feature-card not-prose hx-block hx-relative hx-overflow-hidden hx-rounded-3xl hx-border hx-border-gray-200 hover:hx-border-gray-300 dark:hx-border-neutral-800 dark:hover:hx-border-neutral-700 before:hx-pointer-events-none before:hx-absolute before:hx-inset-0 before:hx-bg-glass-gradient">
+    <div class="hx-relative hx-w-full hx-p-6">
+        <h3 class="hx-text-2xl hx-font-medium hx-leading-6 hx-mb-2 hx-flex hx-items-center">
+            {{ with $icon -}}
+            <span class="hx-pr-2">
+                {{- partial "utils/icon.html" (dict "name" . "attributes" "height=1.5rem") -}}
+            </span>
+            {{ end -}}
+            <span>{{ $title }}</span>
+        </h3>
+        <p class="hx-text-gray-500 dark:hx-text-gray-400 hx-text-sm hx-leading-6">{{ $subtitle | markdownify }}</p>
+    </div>
+    {{- with $image -}}
+    <img src="{{ . }}" class="hx-absolute hx-max-w-none {{ $imageClass }}" alt="{{ $title }}" />
+    {{- end -}}
+
+    <div style="display: flex;justify-content: space-evenly;margin-bottom: 15px;">
+        {{- with $firstBtnText -}}
+
+        <a href="{{ $firstBtnhref }}"
+            class="not-prose hx-font-medium hx-cursor-pointer hx-px-6 hx-py-3 hx-rounded-full hx-text-center hx-text-white hx-inline-block hx-bg-primary-600 hover:hx-bg-primary-700 focus:hx-outline-none focus:hx-ring-4 focus:hx-ring-primary-300 dark:hx-bg-primary-600 dark:hover:hx-bg-primary-700 dark:focus:hx-ring-primary-800 hx-transition-all hx-ease-in hx-duration-200"
+            {{ with $firstBtnStyle }}style="{{ . | safeCSS }}" {{ end }} {{ if $firstBtnexternalLink }}target="_blank"
+            rel="noreferrer" {{ end -}}>
+            {{- $firstBtnText -}}
+        </a>
+        {{- end -}}
+
+        {{- with $secondBtnText -}}
+
+        <a href="{{ $secondBtnhref }}"
+            class="not-prose hx-font-medium hx-cursor-pointer hx-px-6 hx-py-3 hx-rounded-full hx-text-center hx-text-white hx-inline-block hx-bg-primary-600 hover:hx-bg-primary-700 focus:hx-outline-none focus:hx-ring-4 focus:hx-ring-primary-300 dark:hx-bg-primary-600 dark:hover:hx-bg-primary-700 dark:focus:hx-ring-primary-800 hx-transition-all hx-ease-in hx-duration-200"
+            {{ with $secondBtnStyle }}style="{{ . | safeCSS }}" {{ end }} {{ if $secondBtnexternalLink }}target="_blank"
+            rel="noreferrer" {{ end -}}>
+            {{- $secondBtnText -}}
+        </a>
+        {{- end -}}
+
+
+    </div>
+</div>

@@ -1,0 +1,138 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure Serverless Hub – Getting-Started</title>
+    <link>http://localhost:1313/tags/getting-started/</link>
+    <description>Recent content in Getting-Started on Azure Serverless Hub</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	  <atom:link href="http://localhost:1313/tags/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/eda/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/eda/getting-started/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;What are Event Driven Architectures ?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-are-event-driven-architectures-&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-are-event-driven-architectures-&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Event-driven architectures are a design paradigm that employs events and asynchronous communication to loosely couple an application’s components. These architectures can enhance agility and aid in the construction of reliable, scalable applications.&lt;/p&gt;
+&lt;p&gt;Serverless services such as Azure Event Grid, Azure Logic Apps,Azure Container Apps, Azure Service Bus, Azure Event Hubs, and Azure Functions align naturally with event-driven architectures - they are triggered by events, emit events, and possess inherent capabilities for building with events.&lt;/p&gt;
+&lt;p&gt;This guide introduces you with event-driven architectures. Comprehend the patterns within event-driven architectures and the Azure services that are frequently used to implement them. Learn best practices for constructing event-driven architectures, from designing event schemas to managing idempotency. Discover resources to get started with building event-driven architectures on Azure.&lt;/p&gt;
+&lt;h2&gt;What serverless services can you use to build event-driven architectures?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-serverless-services-can-you-use-to-build-event-driven-architectures&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-serverless-services-can-you-use-to-build-event-driven-architectures&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div
+  class=&#34;hextra-feature-grid hx-grid sm:max-lg:hx-grid-cols-2 max-sm:hx-grid-cols-1 hx-gap-4 hx-w-full not-prose&#34;
+  style=&#34;--hextra-feature-grid-cols: 2; margin-top:10px&#34;
+&gt;
+  
+  &lt;div style=&#34;background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));&#34; 
+      class=&#34; hextra-feature-card not-prose hx-block hx-relative hx-overflow-hidden hx-rounded-3xl hx-border hx-border-gray-200 hover:hx-border-gray-300 dark:hx-border-neutral-800 dark:hover:hx-border-neutral-700 before:hx-pointer-events-none before:hx-absolute before:hx-inset-0 before:hx-bg-glass-gradient&#34;&gt;
+      &lt;div class=&#34;hx-relative hx-w-full hx-p-6&#34;&gt;
+          &lt;h3 class=&#34;hx-text-2xl hx-font-medium hx-leading-6 hx-mb-2 hx-flex hx-items-center&#34;&gt;
+              &lt;span class=&#34;hx-pr-2&#34;&gt;&lt;svg height=1.5rem id=&#34;a2c88306-fa03-4e5b-b192-401f0b77808b&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;18&#34; height=&#34;18&#34; viewBox=&#34;0 0 18 18&#34;&gt;&lt;defs&gt;&lt;linearGradient id=&#34;b403aca7-f387-4434-96b4-ae157edc835f&#34; x1=&#34;-175.993&#34; y1=&#34;-343.723&#34; x2=&#34;-175.993&#34; y2=&#34;-359.232&#34; gradientTransform=&#34;translate(212.573 370.548) scale(1.156 1.029)&#34; gradientUnits=&#34;userSpaceOnUse&#34;&gt;&lt;stop offset=&#34;0&#34; stop-color=&#34;#fea11b&#34; /&gt;&lt;stop offset=&#34;0.284&#34; stop-color=&#34;#fea51a&#34; /&gt;&lt;stop offset=&#34;0.547&#34; stop-color=&#34;#feb018&#34; /&gt;&lt;stop offset=&#34;0.8&#34; stop-color=&#34;#ffc314&#34; /&gt;&lt;stop offset=&#34;1&#34; stop-color=&#34;#ffd70f&#34; /&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;title&gt;Icon-compute-29&lt;/title&gt;&lt;g&gt;&lt;path d=&#34;M2.37,7.475H3.2a.267.267,0,0,1,.267.267v6.148a.533.533,0,0,1-.533.533H2.1a0,0,0,0,1,0,0V7.741a.267.267,0,0,1,.267-.267Z&#34; transform=&#34;translate(12.507 16.705) rotate(134.919)&#34; fill=&#34;#50e6ff&#34; /&gt;&lt;path d=&#34;M2.325,3.6h.833a.267.267,0,0,1,.267.267v6.583a0,0,0,0,1,0,0H2.591a.533.533,0,0,1-.533-.533V3.865A.267.267,0,0,1,2.325,3.6Z&#34; transform=&#34;translate(5.759 0.114) rotate(44.919)&#34; fill=&#34;#1490df&#34; /&gt;&lt;/g&gt;&lt;g&gt;&lt;path d=&#34;M14.53,7.475h.833a.533.533,0,0,1,.533.533v6.148a.267.267,0,0,1-.267.267H14.8a.267.267,0,0,1-.267-.267V7.475a0,0,0,0,1,0,0Z&#34; transform=&#34;translate(12.223 -7.555) rotate(45.081)&#34; fill=&#34;#50e6ff&#34; /&gt;&lt;path d=&#34;M15.108,3.6h.833a0,0,0,0,1,0,0v6.583a.267.267,0,0,1-.267.267h-.833a.267.267,0,0,1-.267-.267V4.131a.533.533,0,0,1,.533-.533Z&#34; transform=&#34;translate(31.022 1.222) rotate(135.081)&#34; fill=&#34;#1490df&#34; /&gt;&lt;/g&gt;&lt;path d=&#34;M8.459,9.9H4.87a.193.193,0,0,1-.2-.181.166.166,0,0,1,.018-.075L8.991,1.13a.206.206,0,0,1,.186-.106h4.245a.193.193,0,0,1,.2.181.165.165,0,0,1-.035.1L8.534,7.966h4.928a.193.193,0,0,1,.2.181.176.176,0,0,1-.052.122L5.421,16.788c-.077.046-.624.5-.356-.189h0Z&#34; fill=&#34;url(#b403aca7-f387-4434-96b4-ae157edc835f)&#34; /&gt;&lt;/svg&gt;&lt;/span&gt;
+              &lt;span&gt;Azure Functions&lt;/span&gt;
+          &lt;/h3&gt;
+          &lt;p class=&#34;hx-text-gray-500 dark:hx-text-gray-400 hx-text-sm hx-leading-6&#34;&gt;Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. Instead of worrying about deploying and maintaining servers, the cloud infrastructure provides all the up-to-date resources needed to keep your applications running.&lt;/p&gt;
+      &lt;/div&gt;&lt;div style=&#34;display: flex;justify-content: space-evenly;margin-bottom: 15px;&#34;&gt;&lt;a href=&#34;http://localhost:1313/patterns/&#34;
+              class=&#34;not-prose hx-font-medium hx-cursor-pointer hx-px-6 hx-py-3 hx-rounded-full hx-text-center hx-text-white hx-inline-block hx-bg-primary-600 hover:hx-bg-primary-700 focus:hx-outline-none focus:hx-ring-4 focus:hx-ring-primary-300 dark:hx-bg-primary-600 dark:hover:hx-bg-primary-700 dark:focus:hx-ring-primary-800 hx-transition-all hx-ease-in hx-duration-200&#34;
+               &gt;Patterns&lt;/a&gt;&lt;a href=&#34;https://azure.microsoft.com/en-us/products/functions/&#34;
+              class=&#34;not-prose hx-font-medium hx-cursor-pointer hx-px-6 hx-py-3 hx-rounded-full hx-text-center hx-text-white hx-inline-block hx-bg-primary-600 hover:hx-bg-primary-700 focus:hx-outline-none focus:hx-ring-4 focus:hx-ring-primary-300 dark:hx-bg-primary-600 dark:hover:hx-bg-primary-700 dark:focus:hx-ring-primary-800 hx-transition-all hx-ease-in hx-duration-200&#34;
+               target=&#34;_blank&#34;
+              rel=&#34;noreferrer&#34; &gt;Learn More&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+    &lt;div style=&#34;background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));&#34; 
+        class=&#34; hextra-feature-card not-prose hx-block hx-relative hx-overflow-hidden hx-rounded-3xl hx-border hx-border-gray-200 hover:hx-border-gray-300 dark:hx-border-neutral-800 dark:hover:hx-border-neutral-700 before:hx-pointer-events-none before:hx-absolute before:hx-inset-0 before:hx-bg-glass-gradient&#34;&gt;
+        &lt;div class=&#34;hx-relative hx-w-full hx-p-6&#34;&gt;
+            &lt;h3 class=&#34;hx-text-2xl hx-font-medium hx-leading-6 hx-mb-2 hx-flex hx-items-center&#34;&gt;
+                &lt;span class=&#34;hx-pr-2&#34;&gt;&lt;svg height=1.5rem xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;18&#34; height=&#34;18&#34; viewBox=&#34;0 0 18 18&#34;&gt;&lt;defs&gt;&lt;linearGradient id=&#34;ba6b54e9-66d7-42e0-a289-95171eaf47f3&#34; x1=&#34;9&#34; y1=&#34;1.796&#34; x2=&#34;9&#34; y2=&#34;6.371&#34; gradientUnits=&#34;userSpaceOnUse&#34;&gt;&lt;stop offset=&#34;0&#34; stop-color=&#34;#9cebff&#34; /&gt;&lt;stop offset=&#34;1&#34; stop-color=&#34;#50e6ff&#34; /&gt;&lt;/linearGradient&gt;&lt;linearGradient id=&#34;e5c23c93-889c-4cfe-8adf-72bfa2a5b6e4&#34; x1=&#34;3.374&#34; y1=&#34;12.14&#34; x2=&#34;3.374&#34; y2=&#34;18.457&#34; gradientUnits=&#34;userSpaceOnUse&#34;&gt;&lt;stop offset=&#34;0.001&#34; stop-color=&#34;#b4ec36&#34; /&gt;&lt;stop offset=&#34;1&#34; stop-color=&#34;#86d633&#34; /&gt;&lt;/linearGradient&gt;&lt;linearGradient id=&#34;fb46250a-f4a9-418f-b6ae-1a568665f153&#34; x1=&#34;14.626&#34; y1=&#34;12.14&#34; x2=&#34;14.626&#34; y2=&#34;18.457&#34; gradientTransform=&#34;translate(-0.02 29.273) rotate(-90)&#34; gradientUnits=&#34;userSpaceOnUse&#34;&gt;&lt;stop offset=&#34;0.001&#34; stop-color=&#34;#b4ec36&#34; /&gt;&lt;stop offset=&#34;1&#34; stop-color=&#34;#86d633&#34; /&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;g id=&#34;a9693b19-30a4-439f-a536-87fc73c5ba8c&#34;&gt;&lt;g&gt;&lt;path d=&#34;M13.851,9.047H10.939A1.518,1.518,0,0,1,9.421,7.529V4.33H8.579v3.2A1.518,1.518,0,0,1,7.061,9.047H4.149a1.2,1.2,0,0,0-1.2,1.2v2.338h.841V10.244a.355.355,0,0,1,.356-.355H7.061A2.353,2.353,0,0,0,8.8,9.125a.278.278,0,0,1,.408,0,2.353,2.353,0,0,0,1.735.764h2.912a.354.354,0,0,1,.355.355v2.338h.841V10.244A1.2,1.2,0,0,0,13.851,9.047Z&#34; fill=&#34;#0078d4&#34; /&gt;&lt;rect x=&#34;5.626&#34; y=&#34;-0.02&#34; width=&#34;6.747&#34; height=&#34;6.747&#34; rx=&#34;0.604&#34; fill=&#34;url(#ba6b54e9-66d7-42e0-a289-95171eaf47f3)&#34; /&gt;&lt;rect y=&#34;11.273&#34; width=&#34;6.747&#34; height=&#34;6.747&#34; rx=&#34;0.604&#34; fill=&#34;url(#e5c23c93-889c-4cfe-8adf-72bfa2a5b6e4)&#34; /&gt;&lt;rect x=&#34;11.253&#34; y=&#34;11.273&#34; width=&#34;6.747&#34; height=&#34;6.747&#34; rx=&#34;0.604&#34; transform=&#34;translate(29.273 0.02) rotate(90)&#34; fill=&#34;url(#fb46250a-f4a9-418f-b6ae-1a568665f153)&#34; /&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+                &lt;span&gt;Azure Logic Apps&lt;/span&gt;
+            &lt;/h3&gt;
+            &lt;p class=&#34;hx-text-gray-500 dark:hx-text-gray-400 hx-text-sm hx-leading-6&#34;&gt;Azure Logic Apps is a cloud platform where you can create and run automated workflows with little to no code. By using the visual designer and selecting from prebuilt operations, you can quickly build a workflow that integrates and manages your apps, data, services, and systems.&lt;/p&gt;
+        &lt;/div&gt;&lt;div style=&#34;display: flex;justify-content: space-evenly;margin-bottom: 15px;&#34;&gt;&lt;a href=&#34;http://localhost:1313/patterns/&#34;
+                class=&#34;not-prose hx-font-medium hx-cursor-pointer hx-px-6 hx-py-3 hx-rounded-full hx-text-center hx-text-white hx-inline-block hx-bg-primary-600 hover:hx-bg-primary-700 focus:hx-outline-none focus:hx-ring-4 focus:hx-ring-primary-300 dark:hx-bg-primary-600 dark:hover:hx-bg-primary-700 dark:focus:hx-ring-primary-800 hx-transition-all hx-ease-in hx-duration-200&#34;
+                 &gt;Patterns&lt;/a&gt;&lt;a href=&#34;https://azure.microsoft.com/en-us/products/logic-apps/&#34;
+                class=&#34;not-prose hx-font-medium hx-cursor-pointer hx-px-6 hx-py-3 hx-rounded-full hx-text-center hx-text-white hx-inline-block hx-bg-primary-600 hover:hx-bg-primary-700 focus:hx-outline-none focus:hx-ring-4 focus:hx-ring-primary-300 dark:hx-bg-primary-600 dark:hover:hx-bg-primary-700 dark:focus:hx-ring-primary-800 hx-transition-all hx-ease-in hx-duration-200&#34;
+                 target=&#34;_blank&#34;
+                rel=&#34;noreferrer&#34; &gt;Learn More&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;div style=&#34;background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));&#34; 
+      class=&#34; hextra-feature-card not-prose hx-block hx-relative hx-overflow-hidden hx-rounded-3xl hx-border hx-border-gray-200 hover:hx-border-gray-300 dark:hx-border-neutral-800 dark:hover:hx-border-neutral-700 before:hx-pointer-events-none before:hx-absolute before:hx-inset-0 before:hx-bg-glass-gradient&#34;&gt;
+      &lt;div class=&#34;hx-relative hx-w-full hx-p-6&#34;&gt;
+          &lt;h3 class=&#34;hx-text-2xl hx-font-medium hx-leading-6 hx-mb-2 hx-flex hx-items-center&#34;&gt;
+              &lt;span class=&#34;hx-pr-2&#34;&gt;&lt;svg height=1.5rem xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;18&#34; height=&#34;18&#34; viewBox=&#34;0 0 18 18&#34;&gt;&lt;defs&gt;&lt;linearGradient id=&#34;b27f1ad0-7d11-4247-9da3-91bce6211f32&#34; x1=&#34;8.798&#34; y1=&#34;8.703&#34; x2=&#34;14.683&#34; y2=&#34;8.703&#34; gradientUnits=&#34;userSpaceOnUse&#34;&gt;&lt;stop offset=&#34;0.001&#34; stop-color=&#34;#773adc&#34; /&gt;&lt;stop offset=&#34;1&#34; stop-color=&#34;#552f99&#34; /&gt;&lt;/linearGradient&gt;&lt;linearGradient id=&#34;b2f92112-4ca9-4b17-a019-c9f26c1a4a8f&#34; x1=&#34;5.764&#34; y1=&#34;3.777&#34; x2=&#34;5.764&#34; y2=&#34;13.78&#34; gradientUnits=&#34;userSpaceOnUse&#34;&gt;&lt;stop offset=&#34;0&#34; stop-color=&#34;#a67af4&#34; /&gt;&lt;stop offset=&#34;0.999&#34; stop-color=&#34;#773adc&#34; /&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;g id=&#34;b8a0486a-5501-4d92-b540-a766c4b3b548&#34;&gt;&lt;g&gt;&lt;g&gt;&lt;g&gt;&lt;path d=&#34;M16.932,11.578a8.448,8.448,0,0,1-7.95,5.59,8.15,8.15,0,0,1-2.33-.33,2.133,2.133,0,0,0,.18-.83c.01,0,.03.01.04.01a7.422,7.422,0,0,0,2.11.3,7.646,7.646,0,0,0,6.85-4.28l.01-.01Z&#34; fill=&#34;#32bedd&#34; /&gt;&lt;path d=&#34;M3.582,14.068a2.025,2.025,0,0,0-.64.56,8.6,8.6,0,0,1-1.67-2.44l1.04.23v.26a.6.6,0,0,0,.47.59l.14.03a6.136,6.136,0,0,0,.62.73Z&#34; fill=&#34;#32bedd&#34; /&gt;&lt;path d=&#34;M12.352.958a2.28,2.28,0,0,0-.27.81c-.02-.01-.05-.02-.07-.03a7.479,7.479,0,0,0-3.03-.63,7.643,7.643,0,0,0-5.9,2.8l-.29.06a.6.6,0,0,0-.48.58v.46l-1.02.19A8.454,8.454,0,0,1,8.982.268,8.6,8.6,0,0,1,12.352.958Z&#34; fill=&#34;#32bedd&#34; /&gt;&lt;path d=&#34;M16.872,5.7l-1.09-.38a6.6,6.6,0,0,0-.72-1.16c-.02-.03-.04-.05-.05-.07a2.083,2.083,0,0,0,.72-.45A7.81,7.81,0,0,1,16.872,5.7Z&#34; fill=&#34;#32bedd&#34; /&gt;&lt;path d=&#34;M10.072,11.908l2.54.56L8.672,14.1c-.02,0-.03.01-.05.01a.154.154,0,0,1-.15-.15V3.448a.154.154,0,0,1,.15-.15.09.09,0,0,1,.05.01l4.46,1.56-3.05.57a.565.565,0,0,0-.44.54v5.4A.537.537,0,0,0,10.072,11.908Z&#34; fill=&#34;#fff&#34; /&gt;&lt;g&gt;&lt;g id=&#34;e918f286-5032-4942-ad29-ea17e6f1cc90&#34;&gt;&lt;path d=&#34;M1.1,5.668l1.21-.23v6.55l-1.23-.27-.99-.22a.111.111,0,0,1-.09-.12v-5.4a.12.12,0,0,1,.09-.12Z&#34; fill=&#34;#a67af4&#34; /&gt;&lt;/g&gt;&lt;g&gt;&lt;g id=&#34;a47a99dd-4d47-4c70-8c42-c5ac274ce496&#34;&gt;&lt;g&gt;&lt;path d=&#34;M10.072,11.908l2.54.56L8.672,14.1c-.02,0-.03.01-.05.01a.154.154,0,0,1-.15-.15V3.448a.154.154,0,0,1,.15-.15.09.09,0,0,1,.05.01l4.46,1.56-3.05.57a.565.565,0,0,0-.44.54v5.4A.537.537,0,0,0,10.072,11.908Z&#34; fill=&#34;url(#b27f1ad0-7d11-4247-9da3-91bce6211f32)&#34; /&gt;&lt;path d=&#34;M8.586,3.3,2.878,4.378a.177.177,0,0,0-.14.175V12.68a.177.177,0,0,0,.137.174L8.581,14.1a.176.176,0,0,0,.21-.174V3.478A.175.175,0,0,0,8.619,3.3Z&#34; fill=&#34;url(#b2f92112-4ca9-4b17-a019-c9f26c1a4a8f)&#34; /&gt;&lt;/g&gt;&lt;/g&gt;&lt;polygon points=&#34;5.948 4.921 5.948 12.483 7.934 12.814 7.934 4.564 5.948 4.921&#34; fill=&#34;#b796f9&#34; opacity=&#34;0.5&#34; /&gt;&lt;polygon points=&#34;3.509 5.329 3.509 11.954 5.238 12.317 5.238 5.031 3.509 5.329&#34; fill=&#34;#b796f9&#34; opacity=&#34;0.5&#34; /&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;path d=&#34;M16,2.048a1.755,1.755,0,1,1-1.76-1.76A1.756,1.756,0,0,1,16,2.048Z&#34; fill=&#34;#32bedd&#34; /&gt;&lt;circle cx=&#34;4.65&#34; cy=&#34;15.973&#34; r=&#34;1.759&#34; fill=&#34;#32bedd&#34; /&gt;&lt;/g&gt;&lt;path d=&#34;M18,6.689v3.844a.222.222,0,0,1-.133.2l-.766.316-3.07,1.268-.011,0a.126.126,0,0,1-.038,0,.1.1,0,0,1-.1-.1V5.234a.1.1,0,0,1,.054-.088l0,0,.019,0a.031.031,0,0,1,.019,0,.055.055,0,0,1,.034.008l.011,0,.012,0L17.05,6.2l.8.282A.213.213,0,0,1,18,6.689Z&#34; fill=&#34;#773adc&#34; /&gt;&lt;path d=&#34;M13.959,5.14l-3.8.715a.118.118,0,0,0-.093.117v5.409a.118.118,0,0,0,.091.116l3.8.831a.115.115,0,0,0,.137-.09.109.109,0,0,0,0-.026V5.256a.117.117,0,0,0-.115-.118A.082.082,0,0,0,13.959,5.14Z&#34; fill=&#34;#a67af4&#34; /&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+              &lt;span&gt;Azure Container Apps&lt;/span&gt;
+          &lt;/h3&gt;
+          &lt;p class=&#34;hx-text-gray-500 dark:hx-text-gray-400 hx-text-sm hx-leading-6&#34;&gt;Azure Container Apps is a serverless platform that allows you to maintain less infrastructure and save costs while running containerized applications. Instead of worrying about server configuration, container orchestration, and deployment details, Container Apps provides all the up-to-date server resources required to keep your applications stable and secure.&lt;/p&gt;
+      &lt;/div&gt;&lt;div style=&#34;display: flex;justify-content: space-evenly;margin-bottom: 15px;&#34;&gt;&lt;a href=&#34;http://localhost:1313/patterns/&#34;
+              class=&#34;not-prose hx-font-medium hx-cursor-pointer hx-px-6 hx-py-3 hx-rounded-full hx-text-center hx-text-white hx-inline-block hx-bg-primary-600 hover:hx-bg-primary-700 focus:hx-outline-none focus:hx-ring-4 focus:hx-ring-primary-300 dark:hx-bg-primary-600 dark:hover:hx-bg-primary-700 dark:focus:hx-ring-primary-800 hx-transition-all hx-ease-in hx-duration-200&#34;
+               &gt;Patterns&lt;/a&gt;&lt;a href=&#34;https://azure.microsoft.com/en-us/products/container-apps/&#34;
+              class=&#34;not-prose hx-font-medium hx-cursor-pointer hx-px-6 hx-py-3 hx-rounded-full hx-text-center hx-text-white hx-inline-block hx-bg-primary-600 hover:hx-bg-primary-700 focus:hx-outline-none focus:hx-ring-4 focus:hx-ring-primary-300 dark:hx-bg-primary-600 dark:hover:hx-bg-primary-700 dark:focus:hx-ring-primary-800 hx-transition-all hx-ease-in hx-duration-200&#34;
+               target=&#34;_blank&#34;
+              rel=&#34;noreferrer&#34; &gt;Learn More&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+    &lt;div style=&#34;background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));&#34; 
+        class=&#34; hextra-feature-card not-prose hx-block hx-relative hx-overflow-hidden hx-rounded-3xl hx-border hx-border-gray-200 hover:hx-border-gray-300 dark:hx-border-neutral-800 dark:hover:hx-border-neutral-700 before:hx-pointer-events-none before:hx-absolute before:hx-inset-0 before:hx-bg-glass-gradient&#34;&gt;
+        &lt;div class=&#34;hx-relative hx-w-full hx-p-6&#34;&gt;
+            &lt;h3 class=&#34;hx-text-2xl hx-font-medium hx-leading-6 hx-mb-2 hx-flex hx-items-center&#34;&gt;
+                &lt;span class=&#34;hx-pr-2&#34;&gt;&lt;svg height=1.5rem xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;18&#34; height=&#34;18&#34; viewBox=&#34;0 0 18 18&#34;&gt;&lt;defs&gt;&lt;linearGradient id=&#34;bbd02878-309a-4490-8196-946338d0f593&#34; x1=&#34;8.995&#34; y1=&#34;10.299&#34; x2=&#34;8.995&#34; y2=&#34;13.199&#34; gradientUnits=&#34;userSpaceOnUse&#34;&gt;&lt;stop offset=&#34;0&#34; stop-color=&#34;#005ba1&#34; /&gt;&lt;stop offset=&#34;0.258&#34; stop-color=&#34;#00589d&#34; /&gt;&lt;stop offset=&#34;0.525&#34; stop-color=&#34;#004f90&#34; /&gt;&lt;stop offset=&#34;0.796&#34; stop-color=&#34;#003f7c&#34; /&gt;&lt;stop offset=&#34;1&#34; stop-color=&#34;#003067&#34; /&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;g&gt;&lt;g id=&#34;b532e600-3623-4be6-9fa6-30d05fff56b1&#34;&gt;&lt;polygon points=&#34;13.387 7.4 13.382 7.396 13.382 7.384 13.363 7.384 8.997 4.405 4.631 7.384 4.612 7.384 4.612 7.396 4.606 7.4 4.612 7.4 4.612 13.201 13.382 13.201 13.382 7.4 13.387 7.4&#34; fill=&#34;#50e6ff&#34; /&gt;&lt;path d=&#34;M4.606,7.4c0-.1.008,5.681.008,5.8L8.995,10.3Z&#34; fill=&#34;#32bedd&#34; /&gt;&lt;path d=&#34;M13.384,7.4,8.995,10.3,13.376,13.2C13.376,13.083,13.384,7.3,13.384,7.4Z&#34; fill=&#34;#198ab3&#34; /&gt;&lt;polygon points=&#34;8.995 10.299 4.614 13.194 4.614 13.199 13.376 13.199 13.376 13.194 8.995 10.299&#34; fill=&#34;url(#bbd02878-309a-4490-8196-946338d0f593)&#34; /&gt;&lt;g&gt;&lt;path d=&#34;M1.072,1.43h1.29a0,0,0,0,1,0,0v3.6a.286.286,0,0,1-.286.286H.786A.286.286,0,0,1,.5,5.035V2A.572.572,0,0,1,1.072,1.43Z&#34; fill=&#34;#999&#34; /&gt;&lt;path d=&#34;M1.072,1.43h1.29a0,0,0,0,1,0,0v3.6a.286.286,0,0,1-.286.286H.786A.286.286,0,0,1,.5,5.035V2A.572.572,0,0,1,1.072,1.43Z&#34; fill=&#34;#999&#34; opacity=&#34;0.5&#34; /&gt;&lt;/g&gt;&lt;g&gt;&lt;path d=&#34;M15.638,1.43h1.29A.572.572,0,0,1,17.5,2V5.035a.286.286,0,0,1-.286.286h-1.29a.286.286,0,0,1-.286-.286V1.43A0,0,0,0,1,15.638,1.43Z&#34; fill=&#34;#999&#34; /&gt;&lt;path d=&#34;M15.638,1.43h1.29A.572.572,0,0,1,17.5,2V5.035a.286.286,0,0,1-.286.286h-1.29a.286.286,0,0,1-.286-.286V1.43A0,0,0,0,1,15.638,1.43Z&#34; fill=&#34;#999&#34; opacity=&#34;0.5&#34; /&gt;&lt;/g&gt;&lt;path d=&#34;M8.66-6.163H9.907a0,0,0,0,1,0,0v17a0,0,0,0,1,0,0H8.66a.567.567,0,0,1-.567-.567V-5.6A.567.567,0,0,1,8.66-6.163Z&#34; transform=&#34;translate(11.337 -6.663) rotate(90)&#34; fill=&#34;#949494&#34; /&gt;&lt;g&gt;&lt;path d=&#34;M.786,12.679h1.29a.286.286,0,0,1,.286.286v3.6a0,0,0,0,1,0,0H1.072A.572.572,0,0,1,.5,16V12.965A.286.286,0,0,1,.786,12.679Z&#34; fill=&#34;#999&#34; /&gt;&lt;path d=&#34;M.786,12.679h1.29a.286.286,0,0,1,.286.286v3.6a0,0,0,0,1,0,0H1.072A.572.572,0,0,1,.5,16V12.965A.286.286,0,0,1,.786,12.679Z&#34; fill=&#34;#999&#34; opacity=&#34;0.5&#34; /&gt;&lt;/g&gt;&lt;g&gt;&lt;path d=&#34;M15.924,12.679h1.29a.286.286,0,0,1,.286.286V16a.572.572,0,0,1-.572.572h-1.29a0,0,0,0,1,0,0v-3.6A.286.286,0,0,1,15.924,12.679Z&#34; fill=&#34;#999&#34; /&gt;&lt;path d=&#34;M15.924,12.679h1.29a.286.286,0,0,1,.286.286V16a.572.572,0,0,1-.572.572h-1.29a0,0,0,0,1,0,0v-3.6A.286.286,0,0,1,15.924,12.679Z&#34; fill=&#34;#999&#34; opacity=&#34;0.5&#34; /&gt;&lt;/g&gt;&lt;path d=&#34;M8.66,7.163H9.907a0,0,0,0,1,0,0v17a0,0,0,0,1,0,0H8.66a.567.567,0,0,1-.567-.567V7.73A.567.567,0,0,1,8.66,7.163Z&#34; transform=&#34;translate(-6.663 24.663) rotate(-90)&#34; fill=&#34;#949494&#34; /&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/span&gt;
+                &lt;span&gt;Azure Service Bus&lt;/span&gt;
+            &lt;/h3&gt;
+            &lt;p class=&#34;hx-text-gray-500 dark:hx-text-gray-400 hx-text-sm hx-leading-6&#34;&gt;Azure Service Bus, a fully managed enterprise message broker, facilitates communication between applications and services. It achieves this by decoupling them, offering benefits such as load balancing work across competing workers, secure data routing across service &amp;amp; application boundaries, and reliable coordination for transactional work that requires a high-degree of reliability&lt;/p&gt;
+        &lt;/div&gt;&lt;div style=&#34;display: flex;justify-content: space-evenly;margin-bottom: 15px;&#34;&gt;&lt;a href=&#34;http://localhost:1313/patterns/&#34;
+                class=&#34;not-prose hx-font-medium hx-cursor-pointer hx-px-6 hx-py-3 hx-rounded-full hx-text-center hx-text-white hx-inline-block hx-bg-primary-600 hover:hx-bg-primary-700 focus:hx-outline-none focus:hx-ring-4 focus:hx-ring-primary-300 dark:hx-bg-primary-600 dark:hover:hx-bg-primary-700 dark:focus:hx-ring-primary-800 hx-transition-all hx-ease-in hx-duration-200&#34;
+                 &gt;Patterns&lt;/a&gt;&lt;a href=&#34;https://azure.microsoft.com/en-us/products/service-bus/&#34;
+                class=&#34;not-prose hx-font-medium hx-cursor-pointer hx-px-6 hx-py-3 hx-rounded-full hx-text-center hx-text-white hx-inline-block hx-bg-primary-600 hover:hx-bg-primary-700 focus:hx-outline-none focus:hx-ring-4 focus:hx-ring-primary-300 dark:hx-bg-primary-600 dark:hover:hx-bg-primary-700 dark:focus:hx-ring-primary-800 hx-transition-all hx-ease-in hx-duration-200&#34;
+                 target=&#34;_blank&#34;
+                rel=&#34;noreferrer&#34; &gt;Learn More&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  
+  
+&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/eda/visuals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/eda/visuals/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Small bite sized visuals about event-driven architectures.&lt;/p&gt;
+&lt;p&gt;Designs and random thoughts from &lt;a href=&#34;https://twitter.com/boyney123/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@boyney123&lt;/a&gt; and recreated by &lt;a href=&#34;https://twitter.com/ankt_srkr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@ankt_srkr&lt;/a&gt; whereever needed.&lt;/p&gt;
+&lt;div class=&#34;hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose&#34; style=&#34;--hextra-cards-grid-cols: 3;&#34;&gt;
+  &lt;a
+    class=&#34;hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900&#34;href=&#34;http://localhost:1313/eda/visuals/producer-consumer-responsibilities/&#34;
+      &gt;&lt;span class=&#34;hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-pt-4 hx-px-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;Producer and consumer responsibilities&lt;/span&gt;&lt;div class=&#34;hextra-card-subtitle hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4 hx-mt-2&#34;&gt;Set clear responsibility for producers &amp;amp; consumers&lt;/div&gt;&lt;/a&gt;
+&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/eda/documentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/eda/documentation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Work In Progress!&lt;/p&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>
