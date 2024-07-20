@@ -17,13 +17,13 @@ Events may seem simple, raise something and react somewhere, but as you dive dee
 
 Understanding the core concepts, event types and exploring integration patterns with events can really help you understand events at a deeper level, which can help you when building event-driven solutions.
 
-### Immutable Facts
+### <u>Immutable Facts</u>
 
 * Events are immutable facts. Things that have happened that cannot be undone or changed.
 
 * Events are great a representing real-life scenarios. Events happen all the time, everywhere. The time you played that song, took the bin out, ordered something online, cooked food, at most situations events are happening.
 
- ### Event Types
+ ### <u>Event Types</u>
 * When you start, you may just be publishing any kind of event without much thought. This works initially but can lead you to problems with inconsistent events, poor event design, migration and much more.
 
 * Events come in many different sizes and patterns, many developers building event-driven solutions use various different event types based on their use case.
@@ -32,7 +32,7 @@ Understanding the core concepts, event types and exploring integration patterns 
 
 Understanding these event types can help, and there are more resources below to dive deeper.
 
-### Integration Patterns
+### <u>Integration Patterns</u>
 Integration patterns give us ways in which we can interact, consume and manipulate information before consumers get it.
 
 * __Anti-corruption layer (ACL)__ is a popular pattern that engineers use to map consumed events into events/models that the consuming domain understands. For example consuming an OrderPlaced event within the Payment domain, the payment domain may want to map this event into a structure/schema that the payment domain understands.

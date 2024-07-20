@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 1
 description: What are the responsibilities for our consumers and producers?
 title: Producer and consumer responsibilities
 tags:

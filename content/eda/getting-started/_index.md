@@ -55,7 +55,7 @@ This guide introduces you with event-driven architectures. Comprehend the patter
 
     {{<feature-card-with-btn
     title="Azure Service Bus"
-    subtitle="Azure Service Bus, a fully managed enterprise message broker, facilitates communication between applications and services. It achieves this by decoupling them, offering benefits such as load balancing work across competing workers, secure data routing across service & application boundaries, and reliable coordination for transactional work that requires a high-degree of reliability"
+    subtitle="Azure Service Bus is a fully managed enterprise message broker, facilitates communication between applications and services. It achieves this by decoupling them, offering benefits such as load balancing work across competing workers, secure data routing across service & application boundaries, and reliable coordination for transactional work that requires a high-degree of reliability"
     icon="azure-service-bus"
     firstBtnText="Patterns"
     firstBtnLink= "/patterns/"
@@ -63,5 +63,28 @@ This guide introduces you with event-driven architectures. Comprehend the patter
     secondBtnLink= "https://azure.microsoft.com/en-us/products/service-bus/"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
   >}}
+ 
+    {{<feature-card-with-btn
+    title="Azure Event Grid"
+    subtitle="Azure Event Grid is a highly scalable, fully managed Pub Sub message distribution service that offers flexible message consumption patterns using the MQTT and HTTP protocols. You can build data pipelines with device data, integrate applications, and build event-driven serverless architectures. It supports CloudEvents 1.0 specification to provide interoperability across systems."
+    icon="azure-event-grid"
+    firstBtnText="Patterns"
+    firstBtnLink= "/patterns/"
+    secondBtnText="Learn More"
+    secondBtnLink= "https://azure.microsoft.com/en-us/products/event-grid/"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+  >}}
+
+    {{<feature-card-with-btn
+    title="Azure Event Hubs"
+    subtitle="Azure Event Hubs is a native data-streaming service in the cloud that can stream millions of events per second, with low latency, from any source to any destination. It also integrate seamlessly with other Azure services to unlock valuable insights. It is compatible with Apache Kafka and enables you to run existing Kafka workloads without any code changes."
+    icon="azure-event-hub"
+    firstBtnText="Patterns"
+    firstBtnLink= "/patterns/"
+    secondBtnText="Learn More"
+    secondBtnLink= "https://azure.microsoft.com/en-us/products/event-hubs/"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+  >}}
+  
   
   {{</hextra/feature-grid>}} 

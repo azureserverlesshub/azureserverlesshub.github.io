@@ -15,68 +15,6 @@
     
     
     <item>
-      <title>What are events?</title>
-      <link>http://localhost:1313/eda/visuals/what-are-events/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/eda/visuals/what-are-events/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Events may seem simple, raise something and react somewhere, but as you dive deeper into event-driven architecture and start building solutions you soon realise that there is much more to events that you initially thought.&lt;/p&gt;
-
-
-
-
-
-&lt;figure&gt;
-    &lt;img src=&#34;http://localhost:1313/images/visuals/what-are-events/what-are-events.svg&#34; alt=&#34;Events in Event Driven Architecture&#34; class=&#34;img-fluid&#34; data-action=&#34;zoom&#34; /&gt;
-    &lt;figcaption&gt;
-        Events in Event Driven Architecture
-    &lt;/figcaption&gt;
-  &lt;/figure&gt;
-
-&lt;p&gt;Understanding the core concepts, event types and exploring integration patterns with events can really help you understand events at a deeper level, which can help you when building event-driven solutions.&lt;/p&gt;
-&lt;h3&gt;Immutable Facts&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;immutable-facts&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#immutable-facts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Events are immutable facts. Things that have happened that cannot be undone or changed.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Events are great a representing real-life scenarios. Events happen all the time, everywhere. The time you played that song, took the bin out, ordered something online, cooked food, at most situations events are happening.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Event Types&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;event-types&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#event-types&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;When you start, you may just be publishing any kind of event without much thought. This works initially but can lead you to problems with inconsistent events, poor event design, migration and much more.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Events come in many different sizes and patterns, many developers building event-driven solutions use various different event types based on their use case.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Examples of these are notification events (keeping contracts simple), event-carried state transfer (putting more information into the events), domain events(events representing your domain), delta events (events that give the difference between old and new), and many more…&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Understanding these event types can help, and there are more resources below to dive deeper.&lt;/p&gt;
-&lt;h3&gt;Integration Patterns&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;integration-patterns&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#integration-patterns&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Integration patterns give us ways in which we can interact, consume and manipulate information before consumers get it.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Anti-corruption layer (ACL)&lt;/strong&gt; is a popular pattern that engineers use to map consumed events into events/models that the consuming domain understands. For example consuming an OrderPlaced event within the Payment domain, the payment domain may want to map this event into a structure/schema that the payment domain understands.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Enrichment&lt;/strong&gt; allows events to be enriched with information before downstream consumers consume them. This pattern allows producers to raise simple events, and consumers get information they may require even if it is not on the original event.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Conformist&lt;/strong&gt; pattern is when consumers conform to events as they are. No enrichment, no mapping, nothing. They take the event and consume it. This can be great for domains that life close together, but be careful not to conform to implementation details exposed in events.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.enterpriseintegrationpatterns.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Enterprise Integration Patterns&lt;/a&gt; is a great resource to dive deeper into messaging integration patterns. Worth reading and re-reading.&lt;/p&gt;
-      </description>
-    </item>
-    
-    <item>
       <title>Producer and consumer responsibilities</title>
       <link>http://localhost:1313/eda/visuals/producer-consumer-responsibilities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -99,6 +37,124 @@
   &lt;/figure&gt;
 
 &lt;p&gt;Use this diagram as a base, but you may want to adapt it based on your architecture.&lt;/p&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>What are events?</title>
+      <link>http://localhost:1313/eda/visuals/what-are-events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/eda/visuals/what-are-events/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Events may seem simple, raise something and react somewhere, but as you dive deeper into event-driven architecture and start building solutions you soon realise that there is much more to events that you initially thought.&lt;/p&gt;
+
+
+
+
+
+&lt;figure&gt;
+    &lt;img src=&#34;http://localhost:1313/images/visuals/what-are-events/what-are-events.svg&#34; alt=&#34;Events in Event Driven Architecture&#34; class=&#34;img-fluid&#34; data-action=&#34;zoom&#34; /&gt;
+    &lt;figcaption&gt;
+        Events in Event Driven Architecture
+    &lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+&lt;p&gt;Understanding the core concepts, event types and exploring integration patterns with events can really help you understand events at a deeper level, which can help you when building event-driven solutions.&lt;/p&gt;
+&lt;h3&gt;&lt;u&gt;Immutable Facts&lt;/u&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;uimmutable-factsu&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#uimmutable-factsu&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Events are immutable facts. Things that have happened that cannot be undone or changed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Events are great a representing real-life scenarios. Events happen all the time, everywhere. The time you played that song, took the bin out, ordered something online, cooked food, at most situations events are happening.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;u&gt;Event Types&lt;/u&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;uevent-typesu&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#uevent-typesu&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;When you start, you may just be publishing any kind of event without much thought. This works initially but can lead you to problems with inconsistent events, poor event design, migration and much more.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Events come in many different sizes and patterns, many developers building event-driven solutions use various different event types based on their use case.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Examples of these are notification events (keeping contracts simple), event-carried state transfer (putting more information into the events), domain events(events representing your domain), delta events (events that give the difference between old and new), and many more…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Understanding these event types can help, and there are more resources below to dive deeper.&lt;/p&gt;
+&lt;h3&gt;&lt;u&gt;Integration Patterns&lt;/u&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;uintegration-patternsu&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#uintegration-patternsu&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Integration patterns give us ways in which we can interact, consume and manipulate information before consumers get it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Anti-corruption layer (ACL)&lt;/strong&gt; is a popular pattern that engineers use to map consumed events into events/models that the consuming domain understands. For example consuming an OrderPlaced event within the Payment domain, the payment domain may want to map this event into a structure/schema that the payment domain understands.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Enrichment&lt;/strong&gt; allows events to be enriched with information before downstream consumers consume them. This pattern allows producers to raise simple events, and consumers get information they may require even if it is not on the original event.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Conformist&lt;/strong&gt; pattern is when consumers conform to events as they are. No enrichment, no mapping, nothing. They take the event and consume it. This can be great for domains that life close together, but be careful not to conform to implementation details exposed in events.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.enterpriseintegrationpatterns.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Enterprise Integration Patterns&lt;/a&gt; is a great resource to dive deeper into messaging integration patterns. Worth reading and re-reading.&lt;/p&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Exploring different types of events</title>
+      <link>http://localhost:1313/eda/visuals/event-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/eda/visuals/event-types/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When building EDA applications, it’s important to know the different types of events you can publish, each has their own trade-offs.&lt;/p&gt;
+
+
+
+
+
+&lt;figure&gt;
+    &lt;img src=&#34;http://localhost:1313/images/visuals/event-type/event-type.svg&#34; alt=&#34;Event Types&#34; class=&#34;img-fluid&#34; data-action=&#34;zoom&#34; /&gt;
+    &lt;figcaption&gt;
+        Event Types
+    &lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+&lt;h3&gt;&lt;u&gt;Event Carried State Transfer Events&lt;/u&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;uevent-carried-state-transfer-eventsu&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#uevent-carried-state-transfer-eventsu&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Enriched events (stateful)&lt;/li&gt;
+&lt;li&gt;Higher risk of data being out of sync&lt;/li&gt;
+&lt;li&gt;Consumers have the data&lt;/li&gt;
+&lt;li&gt;Decreases architecture coupling&lt;/li&gt;
+&lt;li&gt;Producer/consumer contracts more coupled&lt;/li&gt;
+&lt;li&gt;Higher risks of breaking contracts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;u&gt;Notification Events&lt;/u&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;unotification-eventsu&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#unotification-eventsu&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Minimal information&lt;/li&gt;
+&lt;li&gt;Less risk of data being out of sync&lt;/li&gt;
+&lt;li&gt;Consumers often need to fetch data&lt;/li&gt;
+&lt;li&gt;Increases architecture coupling (callback for info)&lt;/li&gt;
+&lt;li&gt;Producer/Consumer contracts kept minimum&lt;/li&gt;
+&lt;li&gt;Lower risk of breaking contracts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;u&gt;Delta Events&lt;/u&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;udelta-eventsu&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#udelta-eventsu&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Stores difference between old/new&lt;/li&gt;
+&lt;li&gt;Examples seen in change data capture events&lt;/li&gt;
+&lt;li&gt;Can reduce complex in consumers needing to figure out what has changed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;u&gt;Domain Events&lt;/u&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;udomain-eventsu&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#udomain-eventsu&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Events that raised in the same bounded context&lt;/li&gt;
+&lt;li&gt;Some team reference these as internal events raised in bounded context&lt;/li&gt;
+&lt;li&gt;Some team reference these as business “important” events.&lt;/li&gt;
+&lt;li&gt;People also refer to “integration” events. These are events used for integrations.&lt;/li&gt;
+&lt;/ul&gt;
       </description>
     </item>
     
